@@ -23,6 +23,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const originalButtonText = submitButton.innerHTML;
 
+    // Check URL parameters for pre-filling part enquiry
+    try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const partParam = urlParams.get("part");
+        if (partParam) {
+            const messageField = document.getElementById("contactMessage");
+            const readablePart = decodeURIComponent(partParam).replace(/-/g, " ");
+            if (messageField && !messageField.value) {
+                messageField.value = `Hi Upadhyay Rubber Industry, I would like to request technical specifications and a price quotation for: ${readablePart}.`;
+            }
+        }
+    } catch (e) {
+        console.warn("Could not parse query parameters:", e);
+    }
+
     form.addEventListener("submit", async function (event) {
         event.preventDefault();
 

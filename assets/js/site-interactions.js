@@ -34,7 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const href = (link.getAttribute("href") || "").toLowerCase().split("#")[0].split("/").pop();
 
       if (link.id === "productsToggle") {
-        isCurrent = filename.includes("product");
+        isCurrent = filename.includes("product") ||
+          filename.includes("agricultural") ||
+          filename.includes("commercial") ||
+          filename.includes("electric") ||
+          filename.includes("industrial") ||
+          filename.includes("passenger") ||
+          filename.includes("wheeler");
       } else if (filename === "" || filename === "index.html") {
         isCurrent = href === "" || href === "index.html" || link.getAttribute("href") === "#home";
       } else if (href && (filename === href || filename.replace(".html", "") === href.replace(".html", ""))) {
