@@ -191,17 +191,8 @@
             ];
 
             const createProductCard = p => `
-                <a class="pr-card" href="./products.html#${p.cat}" data-product-category="${p.cat}" title="${p.title} (${p.material})">
-                    <div class="pr-card-media">
-                        <img src="${p.image}" alt="${p.title} - ${p.material}" loading="lazy" width="240" height="180">
-                    </div>
-                    <div class="pr-card-body">
-                        <div class="pr-card-info">
-                            <span class="pr-card-tag">${p.material}</span>
-                            <h3 class="pr-card-title">${p.title}</h3>
-                        </div>
-                        <span class="pr-card-arrow" aria-hidden="true">&#x2197;</span>
-                    </div>
+                <a class="pr-card" href="./products.html#${p.cat}" data-product-category="${p.cat}" title="${p.title}" aria-label="${p.title}">
+                    <img src="${p.image}" alt="${p.title}" loading="lazy" width="240" height="180">
                 </a>
             `;
 
