@@ -266,16 +266,18 @@
       ["affy", "Affy India Pvt. Ltd."], ["eva", "EVA Industries"], ["mini-meter", "Mini Meter Pvt. Ltd."], ["palak", "Palak Plastic Pvt. Ltd."],
       ["talbros", "Talbros Automotive Components Ltd."], ["sunren", "Sunren Automotive Pvt. Ltd."], ["vishwakarma", "Vishwakarma Auto Parts Pvt. Ltd."], ["superlink", "Superlink Industries"],
       ["pragati", "Pragati Coating Pvt. Ltd."], ["alok", "Alok Industries"], ["sheller", "Sheller Industries"], ["accurate", "Accurate Industries"],
-      ["rh-kioko", "RH Kioko Automotive"], ["autokoi", "Autokoi Industries"], ["century", "Century Springs Pvt. Ltd."], ["mechseal", "Mechseal Engineers Pvt. Ltd."]
+      ["rh-kioko", "RH Kioko Automotive"], ["autokoi", "Autokoi Industries"], ["century", "Century Springs Pvt. Ltd."], ["mechseal", "Mechseal Engineers Pvt. Ltd."],
+      ["technical-seal", "Technical Seal"]
     ];
     const $ = id => document.getElementById(id);
     const view = $("csView"), track = $("csTrack"), prev = $("csPrev"), next = $("csNext");
     if (!view || !track) return;
 
     // Render 2 sets of client cards for infinite seamless wrapping
-    const cardHTML = clients.map(([f, n]) =>
-      `<li class="cs-card"><span class="cs-logo"><img src="images/clients/${f}.png" alt="${n} logo" loading="lazy"></span><h3>${n}</h3></li>`
-    ).join("");
+    const cardHTML = clients.map(([f, n]) => {
+      const src = f.includes(".") ? `images/clients/${f}` : `images/clients/${f}.png`;
+      return `<li class="cs-card"><span class="cs-logo"><img src="${src}" alt="${n} logo" loading="lazy"></span><h3>${n}</h3></li>`;
+    }).join("");
     track.innerHTML = cardHTML + cardHTML;
 
     const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;

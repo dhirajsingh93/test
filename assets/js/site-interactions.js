@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Precision in Every ",
       highlight: "Component.",
       description:
-        "Upadhyay Rubber Industry delivers rubber and plastic component solutions for industrial and OEM requirements, focusing on precision, reliability, and application-specific needs."
+        "Upadhyay Rubber Industries delivers rubber and plastic component solutions for industrial and OEM requirements, focusing on precision, reliability, and application-specific needs."
     },
     {
       image: "images/site/home-2.jpg",

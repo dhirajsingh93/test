@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const messageField = document.getElementById("contactMessage");
             const readablePart = decodeURIComponent(partParam).replace(/-/g, " ");
             if (messageField && !messageField.value) {
-                messageField.value = `Hi Upadhyay Rubber Industry, I would like to request technical specifications and a price quotation for: ${readablePart}.`;
+                messageField.value = `Hi Upadhyay Rubber Industries, I would like to request technical specifications and a price quotation for: ${readablePart}.`;
             }
         }
     } catch (e) {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         statusMessage.classList.remove("is-success", "is-error");
 
         if (typeof emailjs === "undefined") {
-            statusMessage.textContent = "✕ Email service is currently unavailable. Please contact us directly via WhatsApp (+91 88104 22099) or email (upadhyayrubber@gmail.com).";
+            statusMessage.textContent = "✕ Email service is currently unavailable. Please contact us directly via WhatsApp (+91 88104 22099 / +91 87663 71051) or email (upadhyayrubber@gmail.com).";
             statusMessage.classList.add("is-error");
             return;
         }
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // SUCCESS MESSAGE
             statusMessage.textContent =
-                "✓ Enquiry sent successfully! Thank you for contacting Upadhyay Rubber Industry. Our team will get back to you soon.";
+                "✓ Enquiry sent successfully! Thank you for contacting Upadhyay Rubber Industries. Our team will get back to you soon.";
             statusMessage.classList.add("is-success");
 
             // Clear the form after successful submission

@@ -1,7 +1,7 @@
 /**
  * Sector Products Showcase JavaScript
  * Handles sector filtering, real-time product search, and quote links.
- * Upadhyay Rubber Industry (Faridabad)
+ * Upadhyay Rubber Industries (Faridabad)
  */
 
 (function () {

@@ -1,12 +1,12 @@
-# Upadhyay Rubber Industry — Product Analysis & Sector Categorization
+# Upadhyay Rubber Industries — Product Analysis & Sector Categorization
 
-Comprehensive analysis and structured industry categorization for all rubber and plastic components manufactured by **Upadhyay Rubber Industry** (Faridabad, Haryana, India).
+Comprehensive analysis and structured industry categorization for all rubber and plastic components manufactured by **Upadhyay Rubber Industries** (Faridabad, Haryana, India).
 
 ---
 
 ## 1. Executive Product Analysis
 
-Upadhyay Rubber Industry specializes in precision rubber compounding, hydraulic compression moulding, profile extrusion, and rubber-to-metal bonding for OEM and tier-1 industrial clients.
+Upadhyay Rubber Industries specializes in precision rubber compounding, hydraulic compression moulding, profile extrusion, and rubber-to-metal bonding for OEM and tier-1 industrial clients.
 
 ### Core Product Classifications by Manufacturing Type:
 
@@ -200,7 +200,7 @@ A complete cross-reference showing all 28+ product lines and where they are depl
 
 ## 4. Polymer & Material Specification Guide
 
-Upadhyay Rubber Industry formulates compounds in-house using an open two-roll mixing mill:
+Upadhyay Rubber Industries formulates compounds in-house using an open two-roll mixing mill:
 
 | Polymer Type | Common Abbreviation | Operating Temperature | Key Chemical Resistance | Ideal Sectors |
 | :--- | :---: | :---: | :--- | :--- |
