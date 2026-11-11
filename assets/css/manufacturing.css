@@ -46,19 +46,11 @@
     color: #fff;
 }
 
-/*
-  Primary image:
-  images/hero.jpg
-
-  Replace this path with your actual manufacturing
-  facility or hydraulic press image if required.
-*/
-
 .mf .mf-hero .about-hero-image {
     position: absolute;
     inset: 0;
     z-index: -2;
-    background-image: url("../images/hero.jpg");
+    background-image: url("../../images/manufacturing-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 45%;
